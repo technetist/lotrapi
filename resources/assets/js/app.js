@@ -7,8 +7,6 @@
 
 require('./bootstrap');
 
-require('axios');
-
 let axiosConfig = {
     headers: {
         'Content-Type': 'application/json',

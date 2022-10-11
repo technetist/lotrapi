@@ -1,0 +1,18 @@
+/* Fonts*/
+@import url('https://fonts.googleapis.com/css?family=Cinzel:700|Lato:400,900&subset=latin-ext');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+/*//// Variables*/
+/*//@import "variables";*/
+/*//*/
+/*//// Bootstrap*/
+/*//@import '~bootstrap/scss/bootstrap';*/
+/*//*/
+/*//@import "navigation";*/
+/*//*/
+/*//@import "home";*/

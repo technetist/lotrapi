@@ -11,4 +11,8 @@
 |
 */
 
-Route::get('/', 'ApiController@index')->middleware('\App\Http\Middleware\ApiCheck::class');
+use Illuminate\Support\Facades\Route;
+
+Route::get('/', 'ApiController@index')
+    ->middleware('\App\Http\Middleware\ApiCheck::class')
+    ->name('home');

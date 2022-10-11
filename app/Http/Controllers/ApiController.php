@@ -29,10 +29,16 @@ class ApiController extends Controller
     use RegionsTrait;
     use SpeciesTrait;
 
+    public function index()
+    {
+        return view('welcome');
+    }
+
     /**
      * Display a listing of the resource.
      *
-     * @param  \Illuminate\Http\Request $request
+     * @param \Illuminate\Http\Request $request
+     *
      * @return \Illuminate\Http\Response
      */
     public function getAll(Request $request, $model)
@@ -112,7 +118,8 @@ class ApiController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request $request
+     * @param \Illuminate\Http\Request $request
+     *
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
@@ -123,7 +130,8 @@ class ApiController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Character $person
+     * @param \App\Character $person
+     *
      * @return \Illuminate\Http\Response
      */
     public function show(Character $person)
@@ -134,7 +142,8 @@ class ApiController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Character $person
+     * @param \App\Character $person
+     *
      * @return \Illuminate\Http\Response
      */
     public function edit(Character $person)
@@ -145,8 +154,9 @@ class ApiController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request $request
-     * @param  \App\Character $person
+     * @param \Illuminate\Http\Request $request
+     * @param \App\Character           $person
+     *
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, Character $person)
@@ -157,7 +167,8 @@ class ApiController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Character $person
+     * @param \App\Character $person
+     *
      * @return \Illuminate\Http\Response
      */
     public function destroy(Character $person)
